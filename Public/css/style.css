@@ -1,0 +1,162 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+:root {
+    --main-bg   : #1e272e;
+    --main-color: #FFC107;
+    --img-sky   : #60A2D7;
+    --Maven-font: 'Maven Pro', sans-serif;
+}
+
+body {
+    display       : flex;
+    flex-direction: column;
+    height        : 100vh;
+    font-family   : var(--Maven-font);
+}
+
+.row {
+    margin: 0;
+}
+
+.navContainer {
+    border-bottom-left-radius : 5px;
+    border-bottom-right-radius: 5px;
+    background-color          : var(--main-bg);
+}
+
+.navbar {
+    border-bottom-left-radius : 5px;
+    border-bottom-right-radius: 5px;
+    background-color          : var(--main-bg);
+    color                     : var(--main-color);
+}
+
+.navbar li a {
+    color    : var(--main-color);
+    font-size: large;
+}
+
+.navbar-brand {
+    color: var(--img-sky);
+}
+
+.navbar-brand:hover {
+    color: var(--img-sky);
+}
+
+.navbar-brand span {
+    color      : white;
+    font-family: var(--Maven-font);
+    font-size  : larger;
+}
+
+.navbar-toggler-icon {
+    background-image: url("../img/align-justify.svg");
+    background-color: var(--img-sky);
+    border          : 1px solid var(--main-bg);
+    border-radius   : 5px;
+}
+
+#navbarSupportedContent ul {
+    margin-left: auto;
+}
+
+#snowFlake1 {
+    animation: rot 1.5s linear infinite;
+}
+
+@keyframes rot {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+#snowFlake2 {
+    animation: rot2 1.5s linear infinite;
+}
+
+@keyframes rot2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Hero Section  */
+.leftSide {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    font-family    : var(--Maven-font);
+}
+
+.leftSide p,
+a {
+    align-self: flex-start;
+}
+
+.leftSide h1 {
+    font-family  : var(--Maven-font);
+    margin-bottom: 50px;
+    font-weight  : bold;
+}
+
+.leftSide h1 span {
+    color: var(--main-color);
+}
+
+.leftSide p {
+    font-size: larger;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color           : white;
+    text-align      : center;
+    height          : 30px;
+    line-height     : 30px;
+    bottom          : 0 !important;
+    margin-top      : auto;
+}
+
+footer span {
+    color           : black;
+    background-color: white;
+    border-radius   : 3px;
+    padding         : 1px 3px;
+}
+
+
+/* About Me Page  */
+.aboutImg {
+    height       : 500px;
+    width        : 400px;
+    border-radius: 15px;
+    box-shadow   : 2px 3px 8px -1px;
+
+}
+
+/* 404 page  */
+#Img404 {
+    width            : 50vw;
+    height           : 50vh;
+}
+.imgDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}

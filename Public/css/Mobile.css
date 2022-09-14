@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+
+    /* Hero Section Carousel on right side */
+    .rightSide {
+        width : 45%;
+        height: 45%;
+    }
+
+    .carousel-inner {
+        bottom  : -50px;
+        position: relative
+    }
+
+    /* About Me Page  */
+    .aboutImg {
+        height       : 250px;
+        width        : 200px;
+        margin-left  : 60px;
+        margin-bottom: 25px;
+    }
+
+}

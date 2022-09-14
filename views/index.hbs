@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>Header}}
+    <title>Home Page</title>
+</head>
+
+<body>
+    {{>Menu}}
+
+    <!-- Hero Section  -->
+    <div class="container heroSection mx-auto col-lg-10 col-md-10 col-sm-12">
+        <div class="row mt-5">
+            <!-- left side  -->
+            <div class="col-lg-6 col-md-6 col-sm-12 leftSide">
+                <p>Welcome to Weather App</p>
+                <h1>Get The Latest <span> Weather </span> Info Of Your City</h1>
+                <a href="/weather"><button class="btn btn-outline-dark" id="checkBtn"> Check Now</button></a>
+
+            </div>
+            <!-- Right Side  -->
+            <div class="col-lg-4 col-md-4 col-sm-12 m-auto rightSide">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/clear.svg" class="d-block w-100" alt="clear">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/cloud.svg" class="d-block w-100" alt="cloud">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/haze.svg" class="d-block w-100" alt="haze">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/rain.svg" class="d-block w-100" alt="rain">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/snow.svg" class="d-block w-100" alt="snow">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/storm.svg" class="d-block w-100" alt="storm">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--End Row-->
+    </div>
+    <!--End Container-->
+
+
+   {{>Footer}}
+
+</body>
+
+</html>
